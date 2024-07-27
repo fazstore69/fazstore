@@ -1,0 +1,2 @@
+# fazstore
+web toko
