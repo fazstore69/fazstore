@@ -1,0 +1,192 @@
+body {
+    font-family: 'Ailerons', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #B6BBC4;
+    color: #131212;
+}
+
+header {
+    background-color: #161A30;
+    color: white;
+    padding: 1.5em 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 3em 1em;
+    text-align: center;
+}
+
+#services {
+    background-color: #31304D;
+    color: #faf7f7;
+    padding: 2em 0;
+}
+
+.products-container, .order-container {
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 2%;
+    box-sizing: border-box;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product {
+    background-color: #F0ECE5;
+    color: rgb(15, 14, 14);
+    border-radius: 10px;
+    margin: 1em;
+    padding: 1.5em;
+    width: calc(50% - 4em);
+    box-sizing: border-box;
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.order-container {
+    background-color: #31304D;
+    color: white;
+    border-radius: 10px;
+    padding: 2em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+form label, form input, form select, form textarea {
+    margin-bottom: 1em;
+    width: 100%;
+    padding: 0.5em;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #e91e63;
+    color: white;
+    border: none;
+    padding: 1em;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+form button:hover {
+    background-color: #c2185b;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 2em;
+}
+
+.price-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 2em;
+    border-radius: 10px;
+    text-align: left;
+    width: 80%;
+    max-width: 500px;
+    box-sizing: border-box;
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover, .close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .products-container, .order-container {
+        width: 100%;
+        margin: 1em 0;
+    }
+    
+    .product {
+        width: calc(100% - 2em);
+    }
+}
+
+@media (max-width: 480px) {
+    header nav ul li {
+        margin: 0 5px;
+    }
+
+    header nav ul li a {
+        font-size: 0.9em;
+    }
+
+    .product {
+        padding: 1em;
+    }
+    
+    form label, form input, form select, form textarea, form button {
+        font-size: 0.9em;
+        padding: 0.5em;
+    }
+}

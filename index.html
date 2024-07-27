@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pusat Hosting!!FAZ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Selamat Datang di Pusat Hosting BY FAZ</h1>
+        <nav>
+            <ul>
+                <li><a href="#services">Layanan</a></li>
+                <li><a href="#products-order">Daftar Produk</a></li>
+                <li><a href="#order-form">Pemesanan</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="services">
+        <h2>Layanan Kami</h2>
+        <p>Kami menyediakan layanan VPS, domain, server hosting, dan banyak lagi.</p>
+    </section>
+    
+    <section id="products-order">
+        <div class="products-container">
+            <h2>Produk Kami</h2>
+            <p>klik pilihan produk untuk melihat list harga</p>
+            <div class="product-grid">
+                <div class="product" data-harga="VPS:, 4GB-80GB SSD-2vCPU Rp.40.000, 8GB-160GB SSD-4vCPU Rp 55.000, 16GB-200GB SSD-4vCPU Rp 80.000">
+                    <h3>VPS</h3>
+                    <p>Layanan VPS dengan performa terbaik untuk kebutuhan Anda.</p>
+                </div>
+                <div class="product" data-harga="Domain:, my.id Rp 20.000, biz.id Rp 25.000, online Rp 30.000, store Rp 32.000, org Rp 85.000, ac.id Rp 90.000, com Rp 130.000, net Rp 190.000">
+                    <h3>Domain</h3>
+                    <p>Pilih dan beli domain untuk website Anda.</p>
+                </div>
+                <div class="product" data-harga="Server Hosting:, 1GB-8GB SSD-100% CPU Rp 10.000, 2GB-12GB SSD-200% CPU Rp 20.000, DAN SETERUSNYA HARGA 10K/GB">
+                    <h3>Server Hosting</h3>
+                    <p>Hosting server yang handal dan cepat.</p>
+                </div>
+                <div class="product" data-harga="Pterodactyl Installation:, RP.13.000/1x INSTAL">
+                    <h3>Pterodactyl Installation</h3>
+                    <p>Jasa instalasi Pterodactyl untuk server Anda.</p>
+                </div>
+                <div class="product" data-harga="Minecraft Original:, MINECRAFT ORIGINAL Rp 20.000, MINECRAFT ORIGINAL VIP Rp 30.000">
+                    <h3>Minecraft Original</h3>
+                    <p>Aplikasi Minecraft Original untuk gaming Anda.</p>
+                </div>
+                <div class="product" data-harga="Akun Pojav Premium:, POJAV [SHARING] Rp 42.000, POJAV FULL AKSES Rp 215.000">
+                    <h3>Akun Pojav Premium</h3>
+                    <p>Dapatkan akun Pojav Premium untuk pengalaman gaming terbaik.</p>
+                </div>
+                <div class="product" data-harga="Jasa Pembuatan Skin:, SKIN MINECRAFT Rp 20.000">
+                    <h3>Jasa Pembuatan Skin</h3>
+                    <p>Buat skin Minecraft custom sesuai keinginan Anda.</p>
+                </div>
+                <div class="product" data-harga="Jasa Pembuatan Logo Server:, LOGO SERVER Rp 15.000">
+                    <h3>Jasa Pembuatan Logo Server</h3>
+                    <p>Buat logo server Minecraft yang menarik dan unik.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="order-container">
+            <h2>Pesan Sekarang</h2>
+            <form id="order-form">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="product">Produk:</label>
+                <select id="product" name="product" required>
+                    <option value="VPS">VPS</option>
+                    <option value="Domain">Domain</option>
+                    <option value="Server Hosting">Server Hosting</option>
+                    <option value="Pterodactyl Installation">Pterodactyl Installation</option>
+                    <option value="Minecraft Original">Minecraft Original</option>
+                    <option value="Akun Pojav Premium">Akun Pojav Premium</option>
+                    <option value="Jasa Pembuatan Skin">Jasa Pembuatan Skin</option>
+                    <option value="Jasa Pembuatan Logo Server">Jasa Pembuatan Logo Server</option>
+                </select>
+                
+                <label for="message">Pesan:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Pesan via WhatsApp</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2021 Pusat Hosting !! FAZ</p>
+    </footer>
+    
+    <div id="price-popup" class="price-popup">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <h2>Daftar Harga</h2>
+            <ul id="price-list"></ul>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
